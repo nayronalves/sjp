@@ -20,6 +20,7 @@ staticfiles/
 
 # VSCode
 .vscode/
+.idea/
 
 # Docker
 *.pid
