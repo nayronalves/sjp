@@ -36,6 +36,8 @@ static_volume/
 # npm
 node_modules/
 
+nginx/
+
 # OS
 .DS_Store
 Thumbs.db
