@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+<table class="table table-pin-rows">
+    <caption class="text-base-content p-5 text-left text-lg font-semibold rtl:text-right">
+        <div class="grid grid-cols-2 gap-4">
+            <div>Informações Associado
+                <p class="text-base-content/80 mt-1 text-sm font-normal">
+                    Lista de associados com matrícula, nome completo, endereço de email, etc.
+                </p>
+            </div>
+            <div class="input input-lg flex max-w-md space-x-4 justify-self-end">
+                <span class="icon-[tabler--search] text-base-content/80 size-6 my-auto shrink-0"></span>
+                <input type="search" class="grow" placeholder="Pesquisar pelo nome do associado" id="kbdInput"/>
+                <label class="sr-only" for="kbdInput">Search</label>
+            </div>
+        </div>
+    </caption>
+    <thead>
+    <tr>
+        <th>Matrícula</th>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Situação</th>
+        <th>Data</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for associate in associates %}
+    <tr class="row-hover">
+        <td>{{ associate.registry }}</td>
+        <td>{{ associate.fullname }}</td>
+        <td>{{ associate.email }}</td>
+        <td><span class="badge badge-soft badge-success text-xs">ativo</span></td>
+        <td>{{ associate.created_at }}</td>
+        <td>
+            <button class="btn btn-circle btn-text btn-sm" aria-label="Action button"><span
+                    class="icon-[tabler--pencil] size-5"></span></button>
+            <button class="btn btn-circle btn-text btn-sm" aria-label="Action button"><span
+                    class="icon-[tabler--trash] size-5"></span></button>
+            <button class="btn btn-circle btn-text btn-sm" aria-label="Action button"><span
+                    class="icon-[tabler--dots-vertical] size-5"></span></button>
+        </td>
+    </tr>
+    {% endfor %}
+
+    </tbody>
+</table>
+{% endblock %}
