@@ -23,7 +23,7 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 COPY . /app/
 
 # Criar diretórios para arquivos estáticos e mídia
-RUN mkdir -p /app/staticfiles /app/media
+RUN mkdir -p /app/static /app/media
 
 # Coletar estáticos (opcional, pode ser feito no start.sh)
 # RUN python manage.py collectstatic --noinput
