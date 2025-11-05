@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.sqlite3
+*.log
+*.pot
+*.pyc
+
+# Virtualenv
+venv/
+env/
+ENV/
+
+# Django stuff
+*.log
+db.sqlite3
+#media/
+
+# VSCode
+.vscode/
+.idea/
+
+# Docker
+*.pid
+*.seed
+*.bak
+*.swp
+docker-compose.override.yml
+*.db
+postgres_data/
+media_volume/
+static_volume/
+
+# npm
+node_modules/
+
+nginx/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
