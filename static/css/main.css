@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'InterVariable';
-    src: url('/static/font-files/inter/Inter-VariableFont_opsz,wght.ttf') format('woff2');
+    src: url("../font-files/inter/Inter-VariableFont_opsz,wght.ttf") format('woff2');
     font-weight: 100 900;
     font-display: swap;
 }

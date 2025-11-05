@@ -6,7 +6,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="{% static 'css/output.css' %}">
 </head>
-<body class="font-sans">
+<body>
 <div class="w-full overflow-x-auto">
     <table class="table">
         <thead>
@@ -15,16 +15,18 @@
             <th>Name</th>
             <th>Email</th>
             <th>Status</th>
+            <th>Data</th>
             <th>Actions</th>
         </tr>
         </thead>
         <tbody>
         {% for associate in associates %}
         <tr class="row-hover">
-            <td>John Doe</td>
-            <td>johndoe@example.com</td>
-            <td><span class="badge badge-soft badge-success text-xs">Professional</span></td>
-            <td>March 1, 2024</td>
+            <td>{{ associate.registry }}</td>
+            <td>{{ associate.fullname }}</td>
+            <td>{{ associate.email }}</td>
+            <td><span class="badge badge-soft badge-success text-xs">ativo</span></td>
+            <td>{{ associate.created_at }}</td>
             <td>
                 <button class="btn btn-circle btn-text btn-sm" aria-label="Action button"><span class="icon-[tabler--pencil] size-5"></span></button>
                 <button class="btn btn-circle btn-text btn-sm" aria-label="Action button"><span class="icon-[tabler--trash] size-5"></span></button>
