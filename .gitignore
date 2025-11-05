@@ -16,7 +16,7 @@ ENV/
 *.log
 db.sqlite3
 media/
-staticfiles/
+static/
 
 # VSCode
 .vscode/
@@ -32,6 +32,9 @@ docker-compose.override.yml
 postgres_data/
 media_volume/
 static_volume/
+
+# npm
+node_modules/
 
 # OS
 .DS_Store
