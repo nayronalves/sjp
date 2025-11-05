@@ -16,7 +16,6 @@ ENV/
 *.log
 db.sqlite3
 #media/
-#static/
 
 # VSCode
 .vscode/
